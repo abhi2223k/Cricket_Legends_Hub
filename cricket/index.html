@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Legends Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to Cricket Legends Hub</h1>
+        <p>Discover the legends of cricket from around the world.</p>
+        <nav>
+            <a href="#players">Players</a>
+            <a href="#map">Interactive Map</a>
+            <a href="#matches">Top Matches</a>
+            <a href="#fan-zone">Fan Zone</a>
+        </nav>
+    </header>
+
+    <section id="players" class="section">
+        <h2>Featured Players</h2>
+        <div class="player-card-container">
+            <div class="player-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Sachin_Tendulkar_at_MRF_Promotion_Event.jpg" alt="Sachin Tendulkar">
+                <h3>Sachin Tendulkar</h3>
+                <p>Country: India</p>
+                <p>Hometown: Mumbai</p>
+                <p>Achievements: Most runs in international cricket, 100 international centuries.</p>
+            </div>
+            <div class="player-card">
+                <img src="https://i.redd.it/i6nqziv7l4031.jpg" alt="Ricky Ponting">
+                <h3>Ricky Ponting</h3>
+                <p>Country: Australia</p>
+                <p>Hometown: Launceston, Tasmania</p>
+                <p>Achievements: Captained Australia to two World Cup wins, over 27,000 international runs.</p>
+            </div>
+            <div class="player-card">
+                <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/20200412195853/brianlara2506.jpg" alt="Brian Lara">
+                <h3>Brian Lara</h3>
+                <p>Country: West Indies</p>
+                <p>Hometown: Santa Cruz, Trinidad</p>
+                <p>Achievements: World record holder for highest individual score in a Test (400*).</p>
+            </div>
+            <div class="player-card">
+                <img src="https://circleofcricket.com/post_image/post_image_9632bcb.jpg" alt="Virat Kohli">
+                <h3>Virat Kohli</h3>
+                <p>Country: India</p>
+                <p>Hometown: Delhi</p>
+                <p>Achievements: Among the fastest to 10,000 ODI runs, a modern-day batting legend.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="map" class="section">
+        <h2>Interactive Map</h2>
+        <div id="map-container"></div>
+    </section>
+
+    <section id="matches" class="section">
+        <h2>Top Matches</h2>
+        <div class="match-card-container">
+            <div class="match-card">
+                <h3>India vs Australia - 2011 World Cup</h3>
+                <p>Highlight: <a href="https://www.youtube.com/watch?v=example1" target="_blank=">Watch on YouTube</a></p>
+            </div>
+            <div class="match-card">
+                <h3>West Indies vs England - 2004 Test Match</h3>
+                <p>Highlight: <a href="https://www.youtube.com/watch?v=example2" target="_blank=">Watch on YouTube</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fan-zone" class="section">
+        <h2>Fan Zone</h2>
+        <form id="fan-form">
+            <label for="story">Submit Your Favorite Player Story:</label><br>
+            <textarea id="story" rows="4"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        <h3>Vote for the Greatest Player</h3>
+        <div class="vote-container">
+            <button id="vote-sachin">Sachin Tendulkar</button>
+            <button id="vote-ponting">Ricky Ponting</button>
+            <button id="vote-lara">Brian Lara</button>
+            <button id="vote-kohli">Virat Kohli</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Cricket Legends Hub</p>
+    </footer>
+
+    <!-- Leaflet.js script -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
